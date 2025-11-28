@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"stats",
+  "%Name":"unit_stats",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"stats",
+  "name":"unit_stats",
   "parent":{
     "name":"Structs",
     "path":"folders/Scripts/Structs.yy",

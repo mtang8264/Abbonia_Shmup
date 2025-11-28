@@ -1,0 +1,22 @@
+function unit_stats(_finesse, _agility, _impact, _toughness) constructor {
+	// Finesse represents how quickly the unit is able to shoot.
+	// Finesse 1 represents 1 bullet every 2 seconds.
+	// Finesse 10 represents 1 bullet every 0.2 seconds.
+	finesse = _finesse;
+	// Agility represents how quickly the unit is able to move.
+	agility = _agility;
+	// Impact represents how much damage the unit's bullets do.
+	impact = _impact;
+	// Toughness represent how much damage the unit can take.
+	toughness = _toughness;
+	
+	static bullets_per_second = function() {
+		var _percent = finesse / 10;
+		var _bps = lerp(0.5, 5, _percent);
+		return _bps;
+	}
+	
+	static seconds_per_bullet = function() {
+		return 1 / bullets_per_second();
+	}
+}
