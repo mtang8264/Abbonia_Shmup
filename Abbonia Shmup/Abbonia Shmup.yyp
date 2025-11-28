@@ -28,6 +28,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"bullet_data","path":"scripts/bullet_data/bullet_data.yy",},},
+    {"id":{"name":"character_data","path":"scripts/character_data/character_data.yy",},},
     {"id":{"name":"unit_stats","path":"scripts/unit_stats/unit_stats.yy",},},
     {"id":{"name":"spr_unit_blank","path":"sprites/spr_unit_blank/spr_unit_blank.yy",},},
   ],

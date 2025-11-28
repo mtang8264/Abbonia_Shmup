@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"character_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"character_data",
+  "parent":{
+    "name":"Structs",
+    "path":"folders/Scripts/Structs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
