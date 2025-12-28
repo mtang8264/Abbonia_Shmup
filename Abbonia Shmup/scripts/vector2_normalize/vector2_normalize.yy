@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"vector2_normalize",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"vector2_normalize",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
