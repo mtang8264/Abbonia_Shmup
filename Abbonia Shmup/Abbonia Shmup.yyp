@@ -10,11 +10,11 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Structs","folderPath":"folders/Scripts/Structs.yy","name":"Structs","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
@@ -25,6 +25,7 @@
   },
   "name":"Abbonia Shmup",
   "resources":[
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"bullet_data","path":"scripts/bullet_data/bullet_data.yy",},},
@@ -32,6 +33,7 @@
     {"id":{"name":"unit_stats","path":"scripts/unit_stats/unit_stats.yy",},},
     {"id":{"name":"vector2_normalize","path":"scripts/vector2_normalize/vector2_normalize.yy",},},
     {"id":{"name":"vector2","path":"scripts/vector2/vector2.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_unit_blank","path":"sprites/spr_unit_blank/spr_unit_blank.yy",},},
   ],
   "resourceType":"GMProject",
