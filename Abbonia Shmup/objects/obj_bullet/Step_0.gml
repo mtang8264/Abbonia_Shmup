@@ -1,7 +1,7 @@
 if (data.mode == BULLET_MODE.INACTIVE)
 {
-	x = -64;
-	y = -64;
+	x = bullet_inactive_pos.x;
+	y = bullet_inactive_pos.y;
 	return;
 }
 
