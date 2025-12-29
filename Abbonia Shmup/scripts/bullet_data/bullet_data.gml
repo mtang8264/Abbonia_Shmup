@@ -20,7 +20,7 @@ function bullet_data(_movement_direction, _movement_speed, _damage, _type, _mode
 	///       This happens automatically when the data is created but this is available just in case.
 	static Normalize_Direction = function()
 	{
-		movement_direction = vector2_normalize(movement_direction);
+		movement_direction.normalize();
 	}
 }
 
