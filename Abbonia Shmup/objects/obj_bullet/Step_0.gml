@@ -1,3 +1,4 @@
+/// @desc Handles all step processes for the instance.
 if (data.mode == BULLET_MODE.INACTIVE)
 {
 	x = bullet_inactive_pos.x;

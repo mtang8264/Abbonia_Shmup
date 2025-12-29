@@ -16,10 +16,13 @@ function bullet_data(_movement_direction, _movement_speed, _damage, _type, _mode
 	damage = damage;
 	type = _type;
 	
+	/// @desc Calls for the movement_direction value to be normalized.
+	///       This happens automatically when the data is created but this is available just in case.
 	static Normalize_Direction = function()
 	{
 		movement_direction = vector2_normalize(movement_direction);
 	}
 }
 
+// A macro that is available to represent an inactive bullet.
 #macro inactive_bullet new bullet_data(vector2_zero, 0, 0, BULLET_TYPE.INACTIVE, BULLET_MODE.INACTIVE)
