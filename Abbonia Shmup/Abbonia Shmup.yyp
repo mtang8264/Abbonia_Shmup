@@ -36,6 +36,7 @@
     {"id":{"name":"vector2_normalize","path":"scripts/vector2_normalize/vector2_normalize.yy",},},
     {"id":{"name":"vector2","path":"scripts/vector2/vector2.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},},
     {"id":{"name":"spr_unit_blank","path":"sprites/spr_unit_blank/spr_unit_blank.yy",},},
   ],
   "resourceType":"GMProject",
