@@ -36,3 +36,16 @@ function is_inactive()
 {
 	return data.mode == BULLET_MODE.INACTIVE;
 }
+
+/// @desc Checks if the bullet is beyond reasonable bounds. If it is, the bullet is deactivated.
+function check_out_of_bounds()
+{
+	if (x < -100
+		|| x > room_width + 100
+		|| y < -100
+		|| y > room_height + 100 )
+	{
+		if (debugging_fire_and_deactivated) { show_debug_message(string(id) + " was found to be out of bounds.");}
+		deactivate();
+	}
+}

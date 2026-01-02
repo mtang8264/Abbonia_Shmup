@@ -21,6 +21,9 @@ if (firetime != -1)
 	if (_t >= data.lifetime)
 	{
 		deactivate();
+		return;
 	}
+	
+	check_out_of_bounds();
 }
 #endregion

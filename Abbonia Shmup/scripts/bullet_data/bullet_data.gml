@@ -14,7 +14,7 @@ function bullet_data(_movement_direction,
 					 _damage,
 					 _type,
 					 _mode = BULLET_MODE.LINEAR,
-					 _lifetime = seconds_to_milliseconds(5))
+					 _lifetime = seconds_to_milliseconds(10))
 					 constructor
 {
 	mode = _mode;
