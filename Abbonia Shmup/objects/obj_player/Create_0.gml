@@ -27,6 +27,9 @@ enum PC {
 	SPINEL,
 	GOOSE
 }
+#endregion
+
+current_character = PC.HELENA;
 
 /// @desc                           Returns the data of a character given their index.
 /// @param {real} _character_index  The index of the character to get data for.
@@ -54,9 +57,6 @@ function get_character_data(_character_index) {
 function get_current_character_data() {
 	return get_character_data(current_character);
 }
-#endregion
-
-current_character = PC.HELENA;
 
 /// @desc                     Returns the color of the current character.
 /// @return {Constant.Colour} The color of the active character.
