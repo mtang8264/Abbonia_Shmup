@@ -31,6 +31,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"bullet_data","path":"scripts/bullet_data/bullet_data.yy",},},
     {"id":{"name":"character_data","path":"scripts/character_data/character_data.yy",},},
+    {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
     {"id":{"name":"unit_stats","path":"scripts/unit_stats/unit_stats.yy",},},
     {"id":{"name":"vector2_normalize","path":"scripts/vector2_normalize/vector2_normalize.yy",},},
     {"id":{"name":"vector2","path":"scripts/vector2/vector2.yy",},},
