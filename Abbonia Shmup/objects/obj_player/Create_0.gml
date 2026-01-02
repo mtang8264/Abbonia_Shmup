@@ -1,4 +1,8 @@
 /// @desc handles all create processes and contain object functions.
+#region Debug toggles
+debug_character_swaps = false;
+#endregion
+
 #region Character Data
 character_helena =  new character_data("helena", 
 									   new unit_stats(1, 2, 1, 2),
@@ -25,7 +29,8 @@ enum PC {
 	FIG,
 	OLIVIA,
 	SPINEL,
-	GOOSE
+	GOOSE,
+	COUNT
 }
 #endregion
 
@@ -68,5 +73,24 @@ current_color = function() {
 /// @param {Real} _character_index The index of the character to swap to.
 ///                                Can be represented by their enum value from the enum PC.
 function swap_to_character(_character_index) {
+	if (debug_character_swaps) {
+		show_debug_message("Player is swapping to character with index " + string(_character_index) + " which is " + get_character_data(_character_index).name + ".");
+	}
 	current_character = _character_index;
+}
+
+/// @desc          Returns the index of the next character in sequence.
+/// @return {Real} The index of the next character.
+next_character = function() {
+	var _c = current_character + 1;
+	if (_c >= PC.COUNT) { return 0; }
+	return _c;
+}
+
+/// @desc          Returns the index of the previous character in sequence.
+/// @return {Real} The index of the previous character.
+previous_character = function() {
+	var _c = current_character - 1;
+	if (_c <= -1) { return PC.COUNT - 1; }
+	return _c;
 }
