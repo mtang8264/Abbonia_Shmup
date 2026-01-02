@@ -9,12 +9,20 @@ enum BULLET_TYPE {
 	INACTIVE
 }
 
-function bullet_data(_movement_direction, _movement_speed, _damage, _type, _mode = BULLET_MODE.LINEAR) constructor {
+function bullet_data(_movement_direction,
+                     _movement_speed,
+					 _damage,
+					 _type,
+					 _mode = BULLET_MODE.LINEAR,
+					 _lifetime = seconds_to_milliseconds(5))
+					 constructor
+{
 	mode = _mode;
 	movement_direction = vector2_normalize(_movement_direction);
 	movement_speed = _movement_speed;
 	damage = damage;
 	type = _type;
+	lifetime = _lifetime;	// Lifetime is recorded in milliseconds.
 	
 	/// @desc Calls for the movement_direction value to be normalized.
 	///       This happens automatically when the data is created but this is available just in case.
