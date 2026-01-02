@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"milliseconds_to_seconds",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"milliseconds_to_seconds",
+  "parent":{
+    "name":"Converters",
+    "path":"folders/Scripts/Converters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
