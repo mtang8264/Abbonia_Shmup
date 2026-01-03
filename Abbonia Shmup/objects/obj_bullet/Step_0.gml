@@ -8,8 +8,8 @@ if (data.mode == BULLET_MODE.INACTIVE)
 }
 
 #region movement
-var _new_x = x + data.movement_direction.x * data.movement_speed;
-var _new_y = y + data.movement_direction.y * data.movement_speed;
+var _new_x = x + (data.movement_direction.x * data.movement_speed * microseconds_to_seconds(delta_time));
+var _new_y = y + (data.movement_direction.y * data.movement_speed * microseconds_to_seconds(delta_time));
 x = _new_x;
 y = _new_y;
 #endregion
