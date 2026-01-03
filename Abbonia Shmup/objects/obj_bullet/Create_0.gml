@@ -1,7 +1,9 @@
 /// @desc Handles all creation code for the obj_bullet instance and contains object functions.
 #macro bullet_inactive_pos new vector2(0, 0)	// The position that inactive bullets should keep themselves at.
 
-debugging_fire_and_deactivated = true;
+#region Debug toggles
+debugging_fire_and_deactivated = false;	// Set to true to show messages related to bullet firing and deactivations.
+#endregion
 
 data = inactive_bullet;	// Defaults to the inactive_bullet data set as defined in the script bullet_data.
 firetime = -1;	// The time the bullet was last fired in milliseconds since game start. Should be -1 when inactive.
