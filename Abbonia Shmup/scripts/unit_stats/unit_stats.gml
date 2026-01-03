@@ -1,3 +1,8 @@
+/// @desc	A struct which holds the stats of any unit.
+/// @param	{Real}	_finesse	The finesse stat of the unit. Represents how quickly the unit shoots.
+/// @param	{Real}	_agility	The agility of the unit. Represents how quickly the unit is able to move.
+/// @param	{Real}	_impact		The impact of the unit.	Represents how much damage the unit's bullets do.
+///	@param	{Real}	_toughness	The toughness of the unit. Represents how much damage the unit can take.
 function unit_stats(_finesse, _agility, _impact, _toughness) constructor {
 	// Finesse represents how quickly the unit is able to shoot.
 	// Finesse 1 represents 1 bullet every 2 seconds.
