@@ -9,6 +9,18 @@ enum BULLET_TYPE {
 	INACTIVE
 }
 
+/// @desc	A struct that holds data relevant to a bullet.
+/// @param	{Struct.vector2}	_movement_direction	The direction the bullet should base its movement on.
+///	@param	{Real}				_movement_speed		The speed the bullet should move in pixels per second.
+///	@param	{Real}				_damage				The damage stat of the bullet.
+///	@param	{Real}				_type				The type of bullet as stored in the BULLET_TYPE enum.
+///													0 is friendly.
+///													1 is enemy.
+///													2 is inactive.
+///	@param	{Real}				[_mode]				Optional. The mode that represents how the bullet moves as stored in BULLET_MODE enum.
+///													Defaults to BULLET_MODE.LINEAR.
+/// @param	{Real}				[_lifetime]			Optional. The time in milliseconds the bullet should be active.
+///													Defaults to 10 seconds.
 function bullet_data(_movement_direction,
                      _movement_speed,
 					 _damage,

@@ -1,3 +1,6 @@
+///	@desc	A struct representing a 2D vector.
+///	@arg	{Real}	_x	The X value of the vector.
+///	@arg	{Real}	_y	The Y value of the vector.
 function vector2(_x, _y) constructor{
 	x = _x;
 	y = _y;
