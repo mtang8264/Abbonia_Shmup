@@ -34,6 +34,10 @@ enum PC {
 }
 #endregion
 
+#region Variables
+fire_timer = 0;
+#endregion
+
 current_character = PC.HELENA;
 
 /// @desc                           Returns the data of a character given their index.
@@ -93,4 +97,10 @@ previous_character = function() {
 	var _c = current_character - 1;
 	if (_c <= -1) { return PC.COUNT - 1; }
 	return _c;
+}
+	
+/// @desc			Returns the seconds per bullet of the current character.
+/// @return	{Real}	The number of seconds between each bullet.
+function current_seconds_per_bullet() {
+	return get_current_character_data().base_stats.seconds_per_bullet();
 }
